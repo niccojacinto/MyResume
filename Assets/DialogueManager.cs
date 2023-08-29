@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class DialogueManager : MonoBehaviour
     Transform responseContainer;
     [SerializeField]
     Button nextButton;
+
+    [SerializeField]
+    IntroSequence introSequence;
 
 
     [SerializeField]
@@ -91,11 +95,31 @@ public class DialogueManager : MonoBehaviour
         nextButton.gameObject.SetActive(state);
     }
 
+    public void Say(string id, UnityAction nextEvent = null)
+    {
+        Say(id);
+        nextButton.onClick.RemoveAllListeners();
+        if (nextEvent != null)
+        {
+            nextButton.onClick.AddListener(nextEvent);
+        }
+
+    }
+
     public void Say(string id)
     {
-        // Debug.Log("Saying: " + id);
+        dialoguePanel.gameObject.SetActive(true);
 
-        if (id == "" ) id = "introduction7"; // temp default.
+        if (id == "" )
+        {
+            dialoguePanel.gameObject.SetActive(false);
+            return;
+        } // temp default. just close the dialogue window if there's nothing next to come.
+        else if (id == "[TUTORIAL]")
+        {
+            introSequence.StartCoroutine(introSequence.TutorialCoroutine());
+            return;
+        }
         nextButton.gameObject.SetActive(false);
         currentDialogue = dialogues[id];
         dialoguePanel.Say(currentDialogue.speaker, currentDialogue.dialogue);
@@ -122,7 +146,6 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
-        
     }
 
     public void SayNext()

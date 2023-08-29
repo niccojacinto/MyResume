@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dialogues>
-  <Dialogue id="introduction1" speaker="You" next_id="introduction2" image_id="" image_pos="">Hello, Welcome, have a seat...<Response next_id="introduction1" text="Thank you sir, may i have another?"></Response></Dialogue>
-  <Dialogue id="introduction2" speaker="???" next_id="introduction3" image_id="" image_pos="">Thank you, it's good to be here</Dialogue>
+  <Dialogue id="comein" speaker="You" next_id="" image_id="" image_pos="">Come in!</Dialogue>
+  <Dialogue id="introduction1" speaker="You" next_id="introduction2" image_id="" image_pos="">Hello, Welcome, have a seat.</Dialogue>
+  <Dialogue id="introduction2" speaker="???" next_id="introduction3" image_id="" image_pos="">Thank you, it's good to be here.</Dialogue>
   <Dialogue id="introduction3" speaker="You" next_id="introduction4" image_id="" image_pos="">So let's get this started shall we?</Dialogue>
   <Dialogue id="introduction4" speaker="You" next_id="introduction5" image_id="" image_pos="">Can I call you "Niccolo"?</Dialogue>
   <Dialogue id="introduction5" speaker="Nicco" next_id="introduction6" image_id="" image_pos="">A lot of people call me "Nicco", since it's way easier to say. Haha!</Dialogue>
   <Dialogue id="introduction6" speaker="You" next_id="introduction7" image_id="" image_pos="">That's good to hear.</Dialogue>
-  <Dialogue id="introduction7" speaker="You" next_id="" image_id="" image_pos="">(Let's see...)</Dialogue>
-  <Dialogue id="R-NiccoloJacinto" speaker="Nicco" next_id="introduction7" image_id="" image_pos="">Yep, that's me. People also call me Nix.</Dialogue>
-  <Dialogue id="R-6476282473" speaker="Nicco" next_id="introduction7" image_id="" image_pos="">That's my mobile phone number. I'd very much prefer to be emailed though!</Dialogue>
-  <Dialogue id="R-LinkedIn" speaker="Nicco" next_id="introduction7" image_id="" image_pos="">You can view my LinkedIn profile here if you want: &lt;link=www.linkedin.com/in/niccojacinto&gt;www.linkedin.com/in/niccojacinto&lt;/link&gt;</Dialogue>
+  <Dialogue id="introduction7" speaker="You" next_id="[TUTORIAL]" image_id="" image_pos="">(Let's see...)</Dialogue>
+  <Dialogue id="R-NiccoloJacinto" speaker="Nicco" next_id="" image_id="" image_pos="">Yep, that's me. People also call me Nix.</Dialogue>
+  <Dialogue id="R-6476282473" speaker="Nicco" next_id="" image_id="" image_pos="">That's my mobile phone number. I'd very much prefer to be emailed though!<Response next_id="introduction1" text="Thank you sir, may i have another?"></Response></Dialogue>
+  <Dialogue id="R-LinkedIn" speaker="Nicco" next_id="" image_id="" image_pos="">You can view my LinkedIn profile here if you want: &lt;link=www.linkedin.com/in/niccojacinto&gt;www.linkedin.com/in/niccojacinto&lt;/link&gt;</Dialogue>
+  <Dialogue id="tutorial1" speaker="Tutorial" next_id="" image_id="" image_pos="">Mouse over the resume to highlight points of interest to you.</Dialogue>
 </Dialogues>

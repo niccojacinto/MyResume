@@ -8,6 +8,6 @@ public class Main : MonoBehaviour
     public string entryId;
     private void Start()
     {
-        DialogueManager.Instance.Say(entryId);
+        // DialogueManager.Instance.Say(entryId);
     }
 }

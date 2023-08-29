@@ -28,4 +28,9 @@ public class SoundManager : MonoBehaviour
     {
         audioSource.PlayOneShot(DialogueManager.Instance.dialogueBlipSFX);
     }
+
+    public void PlayOneShot(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
 }
