@@ -44,7 +44,7 @@ public class DialoguePanel : MonoBehaviour
 
         speakerDialogue.text = "";
 
-
+        bool markup = false;
         foreach (char c in d.dialogue)
         {
             if (finishDialogue)
@@ -53,9 +53,28 @@ public class DialoguePanel : MonoBehaviour
                 break;
             }
 
-            speakerDialogue.text += c;
-            SoundManager.Instance.PlayBlip();
-            yield return delay;
+
+            if (c == '<')
+            {
+                markup = true;
+            }
+            else if (c == '>')
+            {
+                markup = false;
+            }
+
+            if (!markup)
+            {
+                speakerDialogue.text += c;
+                SoundManager.Instance.PlayBlip();
+                yield return delay;
+            }
+            else
+            {
+                speakerDialogue.text += c;
+                continue;
+            }
+
         }
         DialogueManager.Instance.ShowNextButton(true);
 
