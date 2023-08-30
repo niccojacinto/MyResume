@@ -195,7 +195,7 @@ MonoBehaviour:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1080, y: 720}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
@@ -233,11 +233,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 65547855}
-  - component: {fileID: 65547858}
-  - component: {fileID: 65547857}
-  - component: {fileID: 65547856}
   m_Layer: 0
-  m_Name: Canvas - FolderTabs
+  m_Name: FolderTabs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,67 +261,6 @@ RectTransform:
   m_AnchoredPosition: {x: 540, y: 360}
   m_SizeDelta: {x: 1080, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &65547856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65547854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &65547857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65547854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &65547858
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 65547854}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 519420031}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
 --- !u!1 &104635427
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,8 +300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.4, y: 225.73}
-  m_SizeDelta: {x: 680.01, y: 100}
+  m_AnchoredPosition: {x: 0.8, y: 168}
+  m_SizeDelta: {x: 565.9, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &104635429
 MonoBehaviour:
@@ -422,7 +358,7 @@ Canvas:
   m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -465,7 +401,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!1 &111018531
 GameObject:
   m_ObjectHideFlags: 0
@@ -915,7 +851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -184, y: 23}
+  m_AnchoredPosition: {x: -114.8, y: 23}
   m_SizeDelta: {x: 124.72, y: 37.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &316088377
@@ -1049,8 +985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -231.3, y: 0}
-  m_SizeDelta: {x: 529.1, y: 720}
+  m_AnchoredPosition: {x: -213.6, y: 0}
+  m_SizeDelta: {x: 439.25, y: 720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &383111572
 MonoBehaviour:
@@ -1421,7 +1357,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: 290}
+  m_AnchoredPosition: {x: -6, y: 244.61}
   m_SizeDelta: {x: 200.3, y: 34.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &503715021
@@ -1445,7 +1381,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
+    m_NormalColor: {r: 1, g: 0, b: 0, a: 0}
     m_HighlightedColor: {r: 1, g: 0, b: 0.050980397, a: 1}
     m_PressedColor: {r: 1, g: 0, b: 0.050980397, a: 1}
     m_SelectedColor: {r: 1, g: 0, b: 0.050980397, a: 1}
@@ -2071,8 +2007,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 131.8, y: 226}
-  m_SizeDelta: {x: 412.9, y: 100}
+  m_AnchoredPosition: {x: 147.8, y: 179.7}
+  m_SizeDelta: {x: 256.9, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &740317559
 MonoBehaviour:
@@ -2151,7 +2087,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &740317563
 Canvas:
   m_ObjectHideFlags: 0
@@ -2169,7 +2105,7 @@ Canvas:
   m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -2769,8 +2705,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -186, y: 0}
-  m_SizeDelta: {x: 728.3, y: 0}
+  m_AnchoredPosition: {x: -164.1, y: 0}
+  m_SizeDelta: {x: 625, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1035811976
 MonoBehaviour:
@@ -3063,8 +2999,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 69, y: 226}
-  m_SizeDelta: {x: 544.3, y: 100}
+  m_AnchoredPosition: {x: 68.7, y: 176.7}
+  m_SizeDelta: {x: 416.5, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1283116318
 MonoBehaviour:
@@ -3121,7 +3057,7 @@ Canvas:
   m_OverrideSorting: 1
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -3164,7 +3100,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 1
+  m_PresetInfoIsWorld: 0
 --- !u!1 &1310816620
 GameObject:
   m_ObjectHideFlags: 0
@@ -3335,7 +3271,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -114.7, y: 28}
+  m_AnchoredPosition: {x: -42, y: 28}
   m_SizeDelta: {x: 124.72, y: 37.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1401928941
@@ -3614,7 +3550,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3874,7 +3810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -42.05, y: 18.35}
+  m_AnchoredPosition: {x: -42.049988, y: 18.35}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &1826500745
@@ -4029,7 +3965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -251.6, y: 23}
+  m_AnchoredPosition: {x: -195.6, y: 23}
   m_SizeDelta: {x: 124.72, y: 37.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1833922836
@@ -4316,8 +4252,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -228, y: 0}
-  m_SizeDelta: {x: 526, y: 684}
+  m_AnchoredPosition: {x: -213.6, y: 0}
+  m_SizeDelta: {x: 439.25, y: 684}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895576083
 MonoBehaviour:
@@ -4474,7 +4410,7 @@ MonoBehaviour:
   nextButton: {fileID: 1826500745}
   introSequence: {fileID: 2062263963}
   listImages:
-  - {fileID: 21300000, guid: 342fa1f8733254e4aa6f854f493b4785, type: 3}
+  - {fileID: 21300000, guid: 5906016b0c66cc041a6958e890b61ef7, type: 3}
   dialoguePanel: {fileID: 1531491915}
   textSpeed: 0.05
   dialogueBlipSFX: {fileID: 8300000, guid: aa62ddb2b2966d3439bcf331ff21e5a2, type: 3}
