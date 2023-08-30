@@ -24,32 +24,32 @@ public class DialoguePanel : MonoBehaviour
         return !coroutineIsRunning;
     }
 
-    private IEnumerator SayCoroutine(string speaker, string dialogue, Sprite sprite=null)
+    private IEnumerator SayCoroutine(Dialogue d)
     {
         coroutineIsRunning = true;
         DialogueManager.Instance.ShowNextButton(false);
         finishDialogue = false;
         WaitForSeconds delay = new WaitForSeconds(DialogueManager.Instance.textSpeed);
-        speakerName.text = speaker;
+        speakerName.text = d.speaker;
 
-        if (!sprite)
+        if (d.GetSprite() == null)
         {
             speakerImageFrame.gameObject.SetActive(false);
         }
         else
         {
-            speakerImage.sprite = sprite;
+            speakerImage.sprite = d.GetSprite();
             speakerImageFrame.gameObject.SetActive(true);
         }
 
         speakerDialogue.text = "";
 
 
-        foreach (char c in dialogue)
+        foreach (char c in d.dialogue)
         {
             if (finishDialogue)
             {
-                speakerDialogue.text = dialogue;
+                speakerDialogue.text = d.dialogue;
                 break;
             }
 
@@ -58,6 +58,11 @@ public class DialoguePanel : MonoBehaviour
             yield return delay;
         }
         DialogueManager.Instance.ShowNextButton(true);
+
+        if (d.responses.Count > 0)
+        {
+            DialogueManager.Instance.ShowResponses();
+        }
         coroutineIsRunning = false;
     }
 
@@ -66,11 +71,11 @@ public class DialoguePanel : MonoBehaviour
         finishDialogue = true;
     }
 
-    public void Say(string speaker, string dialogue, Sprite sprite=null)
+    public void Say(Dialogue _dialogue)
     {
         if (!coroutineIsRunning)
         {
-            StartCoroutine(SayCoroutine(speaker, dialogue, sprite));
+            StartCoroutine(SayCoroutine(_dialogue));
         }
     }
 }

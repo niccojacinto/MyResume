@@ -122,15 +122,6 @@ public class DialogueManager : MonoBehaviour
         }
         nextButton.gameObject.SetActive(false);
         currentDialogue = dialogues[id];
-
-        if (dictImages.ContainsKey(currentDialogue.image_id))
-        {
-            dialoguePanel.Say(currentDialogue.speaker, currentDialogue.dialogue, dictImages[currentDialogue.image_id]);
-        }
-        else
-        {
-            dialoguePanel.Say(currentDialogue.speaker, currentDialogue.dialogue);
-        }
         
 
         // TODO: Use object pooling for responses to save resources on instantiation 
@@ -155,6 +146,14 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
+        dialoguePanel.Say(currentDialogue);
+
+    }
+
+    public void ShowResponses()
+    {
+        responseContainer.gameObject.SetActive(true);
+
     }
 
     public void SayNext()
@@ -175,6 +174,12 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public Sprite GetSprite(string image_id)
+    {
+        if (!dictImages.ContainsKey(image_id)) return null;
+        return dictImages[image_id];
+    }
+
 }
 
 public struct Dialogue
@@ -185,6 +190,11 @@ public struct Dialogue
     public string image_id;
     public string image_pos;
     public string dialogue;
+
+    public Sprite GetSprite()
+    {
+        return DialogueManager.Instance.GetSprite(image_id);
+    }
 
     // desc, nextId
     public List<(string, string)> responses;
