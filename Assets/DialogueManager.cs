@@ -122,7 +122,16 @@ public class DialogueManager : MonoBehaviour
         }
         nextButton.gameObject.SetActive(false);
         currentDialogue = dialogues[id];
-        dialoguePanel.Say(currentDialogue.speaker, currentDialogue.dialogue);
+
+        if (dictImages.ContainsKey(currentDialogue.image_id))
+        {
+            dialoguePanel.Say(currentDialogue.speaker, currentDialogue.dialogue, dictImages[currentDialogue.image_id]);
+        }
+        else
+        {
+            dialoguePanel.Say(currentDialogue.speaker, currentDialogue.dialogue);
+        }
+        
 
         // TODO: Use object pooling for responses to save resources on instantiation 
         //                      OR 

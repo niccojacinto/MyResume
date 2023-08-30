@@ -67,7 +67,7 @@ public class IntroSequence : MonoBehaviour
 
         SoundManager.Instance.PlayOneShot(knockSFX);
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(2f);
 
         DialogueManager.Instance.Say("comein", Continue);
 

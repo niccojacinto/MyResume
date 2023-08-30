@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class DialoguePanel : MonoBehaviour
@@ -9,8 +10,12 @@ public class DialoguePanel : MonoBehaviour
     TMP_Text speakerName;
     [SerializeField]
     TMP_Text speakerDialogue;
+    [SerializeField] 
+    Image speakerImage;
+    [SerializeField]
+    Transform speakerImageFrame;
 
-    public bool coroutineIsRunning = false;
+    bool coroutineIsRunning = false;
     private bool finishDialogue;
 
 
@@ -19,7 +24,7 @@ public class DialoguePanel : MonoBehaviour
         return !coroutineIsRunning;
     }
 
-    private IEnumerator SayCoroutine(string speaker, string dialogue)
+    private IEnumerator SayCoroutine(string speaker, string dialogue, Sprite sprite=null)
     {
         coroutineIsRunning = true;
         DialogueManager.Instance.ShowNextButton(false);
@@ -27,7 +32,19 @@ public class DialoguePanel : MonoBehaviour
         WaitForSeconds delay = new WaitForSeconds(DialogueManager.Instance.textSpeed);
         speakerName.text = speaker;
 
+        if (!sprite)
+        {
+            speakerImageFrame.gameObject.SetActive(false);
+        }
+        else
+        {
+            speakerImage.sprite = sprite;
+            speakerImageFrame.gameObject.SetActive(true);
+        }
+
         speakerDialogue.text = "";
+
+
         foreach (char c in dialogue)
         {
             if (finishDialogue)
@@ -49,11 +66,11 @@ public class DialoguePanel : MonoBehaviour
         finishDialogue = true;
     }
 
-    public void Say(string speaker, string dialogue)
+    public void Say(string speaker, string dialogue, Sprite sprite=null)
     {
         if (!coroutineIsRunning)
         {
-            StartCoroutine(SayCoroutine(speaker, dialogue));
+            StartCoroutine(SayCoroutine(speaker, dialogue, sprite));
         }
     }
 }
