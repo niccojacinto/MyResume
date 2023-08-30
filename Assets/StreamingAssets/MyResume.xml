@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Dialogues>
+<Dialogues xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MyResume.xsd">
   <Dialogue id="comein" speaker="You" next_id="" image_id="" image_pos="">Come in!</Dialogue>
   <Dialogue id="introduction1" speaker="You" next_id="introduction2" image_id="" image_pos="">Hello, welcome, its good to see that you could make it, have a seat.</Dialogue>
   <Dialogue id="introduction2" speaker="???" next_id="introduction3" image_id="portrait" image_pos="">Thank you, it's good to be here.</Dialogue>
