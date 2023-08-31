@@ -8,9 +8,14 @@
   <Dialogue id="introduction5" speaker="Nicco" next_id="introduction6" image_id="portrait" image_pos="">A lot of people call me "Nicco", since it's way easier to say. Haha!</Dialogue>
   <Dialogue id="introduction6" speaker="You" next_id="introduction7" image_id="" image_pos="">Haha! Alright, alright.</Dialogue>
   <Dialogue id="introduction7" speaker="You" next_id="[TUTORIAL]" image_id="" image_pos="">So Nicco, let's talk about your resume...</Dialogue>
-  <Dialogue id="R-NiccoloJacinto" speaker="Nicco" next_id="" image_id="portrait" image_pos="">Yep, that's me. People also call me Nix.</Dialogue>
-  <Dialogue id="R-6476282473" speaker="Nicco" next_id="" image_id="portrait" image_pos="">That's my mobile phone number. I'd very much prefer to be emailed though!<Response next_id="introduction1" text="Thank you sir, may i have another?"></Response></Dialogue>
-  <Dialogue id="R-LinkedIn" speaker="Nicco" next_id="" image_id="" image_pos="">You can view my LinkedIn profile here if you want: &lt;color=lightblue&gt;&lt;link=www.linkedin.com/in/niccojacinto&gt;www.linkedin.com/in/niccojacinto&lt;/link&gt;&lt;/color&gt;</Dialogue>
   <Dialogue id="tutorial1" speaker="Tutorial" next_id="" image_id="" image_pos="">Mouse over the resume to highlight points of interest to you.</Dialogue>
+  <Dialogue id="R-nicco" speaker="Nicco" next_id="" image_id="portrait" image_pos="">Yep, that's me. People also call me Nix.</Dialogue>
+  <Dialogue id="R-phone" speaker="Nicco" next_id="" image_id="portrait" image_pos="">That's my mobile phone number. I'd very much prefer to be emailed though!<Response next_id="R-phone2" text="Can I leave you text messages then?"></Response></Dialogue>
+  <Dialogue id="R-phone2" speaker="Nicco" next_id="" image_id="portrait" image_pos="">Absolutely! the reception's just real bad over where I'm at. Leaving a voicemail is also good if you're unable to reach me!</Dialogue>
+  <Dialogue id="R-linkedin" speaker="Nicco" next_id="" image_id="" image_pos="">You can view my LinkedIn profile here if you want: &lt;color=lightblue&gt;&lt;link=www.linkedin.com/in/niccojacinto&gt;www.linkedin.com/in/niccojacinto&lt;/link&gt;&lt;/color&gt;</Dialogue>
+  <Dialogue id="R-email" speaker="Nicco" next_id="" image_id="" image_pos="">Send me a message by clicking &lt;color=lightblue&gt;&lt;link=mailto:niccolo.jacinto@gmail.com?subject=Hi%20There!&amp;body=Nice%20resume!&gt;here&lt;/link&gt;&lt;/color&gt;!</Dialogue>
+  <Dialogue id="R-github" speaker="Nicco" next_id="" image_id="" image_pos="">That's my github profile, you can find it here: &lt;color=lightblue&gt;&lt;link=https://github.com/niccojacinto&gt;Github Profile&lt;/link&gt;&lt;/color&gt;</Dialogue>
+  <Dialogue id="R-loc" speaker="Nicco" next_id="R-loc2" image_id="portrait" image_pos="">Visit me here: &lt;color=lightblue&gt;&lt;link=https://goo.gl/maps/NV693kDWnFPob98X7&gt;Location&lt;/link&gt;&lt;/color&gt;</Dialogue>
+  <Dialogue id="R-loc2" speaker="Nicco" next_id="" image_id="" image_pos="">Okay, that's not really where I live. It's classified.</Dialogue>
   <Dialogue id="R-soq" speaker="You" next_id="" image_id="" image_pos="">Hmm...<Response next_id="R-soq" text="Do you have any professional experience releasing games?"></Response><Response next_id="R-soq" text="Since when have you started learning Unity?"></Response><Response next_id="R-soq" text="Why don't you try blabla?"></Response><Response next_id="R-soq" text="This is Sparta!!!"></Response></Dialogue>
 </Dialogues>
