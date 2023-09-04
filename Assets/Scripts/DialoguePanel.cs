@@ -50,6 +50,7 @@ public class DialoguePanel : MonoBehaviour
             if (finishDialogue)
             {
                 speakerDialogue.text = d.dialogue;
+                markup = false;
                 break;
             }
 
@@ -72,7 +73,6 @@ public class DialoguePanel : MonoBehaviour
             else
             {
                 speakerDialogue.text += c;
-                continue;
             }
 
         }

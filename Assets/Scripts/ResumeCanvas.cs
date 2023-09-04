@@ -31,10 +31,10 @@ public class ResumeCanvas : MonoBehaviour
         {
             if (i != pageNumber)
             {
-                tabs[i].sortingOrder = 1;
+                tabs[i].sortingOrder = 51;
             }
         }
 
-        tabs[pageNumber].sortingOrder = 2;
+        tabs[pageNumber].sortingOrder = 52;
     }
 }
