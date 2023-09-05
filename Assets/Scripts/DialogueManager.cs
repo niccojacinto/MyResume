@@ -145,15 +145,12 @@ public class DialogueManager : MonoBehaviour
                 rb.SetResponse(responsePair.text, responsePair.next_id);
             }
         }
-
         dialoguePanel.Say(currentDialogue);
-
     }
 
     public void ShowResponses()
     {
         responseContainer.gameObject.SetActive(true);
-
     }
 
     public void SayNext()

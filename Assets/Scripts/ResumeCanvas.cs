@@ -8,10 +8,10 @@ public class ResumeCanvas : MonoBehaviour
     AudioClip pageFlipSFX;
 
     [SerializeField]
-    List<Canvas> pages;
+    List<Transform> pages;
 
     [SerializeField]
-    List<Canvas> tabs;
+    List<Transform> tabs;
 
     public void ShowPage(int pageNumber)
     {
@@ -27,14 +27,6 @@ public class ResumeCanvas : MonoBehaviour
 
         pages[pageNumber].gameObject.SetActive(true);
 
-        for (int i = 0; i < tabs.Count; i++)
-        {
-            if (i != pageNumber)
-            {
-                tabs[i].sortingOrder = 51;
-            }
-        }
-
-        tabs[pageNumber].sortingOrder = 52;
+        tabs[pageNumber].SetAsLastSibling();
     }
 }
