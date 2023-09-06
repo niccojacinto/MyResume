@@ -7,9 +7,16 @@ public class Main : MonoBehaviour
 
     private void Start()
     {
-        if (SystemInfo.deviceType == DeviceType.Handheld)
+        if (Application.isMobilePlatform)
         {
-            Screen.orientation = ScreenOrientation.LandscapeLeft;
+            // Toggle fullscreen
+            Screen.fullScreen = !Screen.fullScreen;
         }
+        //if (SystemInfo.deviceType == DeviceType.Handheld)
+        //{
+        //    Screen.orientation = ScreenOrientation.LandscapeLeft;
+        //}
+
+        
     }
 }
