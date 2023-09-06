@@ -5,9 +5,11 @@ using UnityEngine;
 public class Main : MonoBehaviour
 {
 
-    public string entryId;
     private void Start()
     {
-        // DialogueManager.Instance.Say(entryId);
+        if (SystemInfo.deviceType == DeviceType.Handheld)
+        {
+            Screen.orientation = ScreenOrientation.LandscapeLeft;
+        }
     }
 }
