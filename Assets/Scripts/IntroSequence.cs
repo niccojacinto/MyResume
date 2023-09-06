@@ -19,6 +19,8 @@ public class IntroSequence : MonoBehaviour
     Image blackFadeBackground;
     [SerializeField]
     TMP_Text title;
+    [SerializeField]
+    TMP_Text subtitle;
 
 
     [SerializeField]
@@ -44,10 +46,14 @@ public class IntroSequence : MonoBehaviour
 
     IEnumerator FadeInCoroutine()
     {
-
+        title.gameObject.SetActive(false);
+        subtitle.gameObject.SetActive(false);
         yield return new WaitForSeconds(2f);
         title.gameObject.SetActive(true);
         yield return new WaitForSeconds(2f);
+        subtitle.gameObject.SetActive(true);
+        yield return new WaitForSeconds(2f);
+        subtitle.text = "Why did I make this?";
 
         float fadeDuration = 10f;
         float fadeElapsed = 0f;
@@ -60,10 +66,12 @@ public class IntroSequence : MonoBehaviour
             fadeElapsed += Time.deltaTime;
             blackFadeBackground.color = Color.Lerp(bgfadeStart, new Color(bgfadeStart.r, bgfadeStart.g, bgfadeStart.b, 0f), t);
             title.color = Color.Lerp(titlefadeStart, new Color(title.color.r, title.color.g, title.color.b, 0f), t);
+            subtitle.color = Color.Lerp(titlefadeStart, new Color(title.color.r, title.color.g, title.color.b, 0f), t);
             yield return null;
         }
         blackFadeBackground.gameObject.SetActive(false);
         title.gameObject.SetActive(false);
+        subtitle.gameObject.SetActive(false);
 
         SoundManager.Instance.PlayOneShot(knockSFX);
 
