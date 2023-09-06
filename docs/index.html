@@ -114,6 +114,22 @@
         });
       };
       document.body.appendChild(script);
+
+
+          // Function to lock the orientation to landscape
+    function lockOrientation() {
+        if (typeof screen.orientation !== 'undefined' && screen.orientation.lock) {
+            // Modern browsers supporting screen.orientation
+            screen.orientation.lock('landscape').catch(function (error) {
+                console.error('Orientation lock failed:', error);
+            });
+        } else if (typeof window.screen.orientation !== 'undefined' && window.screen.orientation.lock) {
+            // Older browsers may have window.screen.orientation
+            window.screen.orientation.lock('landscape').catch(function (error) {
+                console.error('Orientation lock failed:', error);
+            });
+        }
+    }
     </script>
   </body>
 </html>
