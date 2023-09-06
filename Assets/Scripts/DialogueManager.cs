@@ -120,6 +120,11 @@ public class DialogueManager : MonoBehaviour
             introSequence.StartCoroutine(introSequence.TutorialCoroutine());
             return;
         }
+        else if (id == "[TUTORIALEND]")
+        {
+            introSequence.EndTutorial();
+            return;
+        }
         nextButton.gameObject.SetActive(false);
         currentDialogue = dialogues[id];
         
@@ -148,9 +153,9 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.Say(currentDialogue);
     }
 
-    public void ShowResponses()
+    public void ShowResponses(bool show)
     {
-        responseContainer.gameObject.SetActive(true);
+        responseContainer.gameObject.SetActive(show);
     }
 
     public void SayNext()

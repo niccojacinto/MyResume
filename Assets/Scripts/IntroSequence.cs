@@ -25,6 +25,12 @@ public class IntroSequence : MonoBehaviour
 
     [SerializeField]
     Transform resumeTransform;
+    [SerializeField]
+    Transform tutorialResumeTransform;
+    [SerializeField]
+    Transform resumePageOne;
+    [SerializeField]
+    Transform folders;
 
     bool proceed = false;
 
@@ -53,7 +59,7 @@ public class IntroSequence : MonoBehaviour
         yield return new WaitForSeconds(2f);
         subtitle.gameObject.SetActive(true);
         yield return new WaitForSeconds(2f);
-        subtitle.text = "Why did I make this?";
+        subtitle.text = "(Disclaimer: not a substitute for an actual interactive resume)";
 
         float fadeDuration = 10f;
         float fadeElapsed = 0f;
@@ -94,8 +100,17 @@ public class IntroSequence : MonoBehaviour
     public IEnumerator TutorialCoroutine()
     {
         resumeTransform.gameObject.SetActive(true);
+        tutorialResumeTransform.gameObject.SetActive(true);
         SoundManager.Instance.PlayOneShot(pageflipSFX);
         DialogueManager.Instance.Say("tutorial1");
         yield return null;
+    }
+
+    public void EndTutorial()
+    {
+        folders.gameObject.SetActive(true);
+        resumePageOne.gameObject.SetActive(true);
+        SoundManager.Instance.PlayOneShot(pageflipSFX);
+        DialogueManager.Instance.Say("");
     }
 }

@@ -1,18 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Dialogues xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MyResume.xsd">
   <Dialogue id="comein" speaker="You" next_id="" image_id="" image_pos="">Come in!</Dialogue>
-  <Dialogue id="introduction1" speaker="You" next_id="introduction2" image_id="" image_pos="">Hello, welcome, its good to see that you could make it, have a seat.</Dialogue>
+  <Dialogue id="introduction1" speaker="You" next_id="introduction2" image_id="" image_pos="">Hello, welcome -- its good to see that you could make it... have a seat.</Dialogue>
   <Dialogue id="introduction2" speaker="???" next_id="introduction3" image_id="portrait2" image_pos="">Thank you, it's good to be here.</Dialogue>
   <Dialogue id="introduction3" speaker="You" next_id="introduction4" image_id="" image_pos="">So let's get this started shall we?</Dialogue>
-  <Dialogue id="introduction4" speaker="You" next_id="introduction5" image_id="" image_pos="">Can I call you "Niccolo"?</Dialogue>
-  <Dialogue id="introduction5" speaker="Nicco" next_id="introduction6" image_id="portrait2" image_pos="">A lot of people call me "Nicco", since it's way easier to say. Haha!</Dialogue>
-  <Dialogue id="introduction6" speaker="You" next_id="introduction7" image_id="" image_pos="">Haha! Alright, alright.</Dialogue>
+  <Dialogue id="introduction4" speaker="You" next_id="introduction5" image_id="" image_pos="">May I address you as "Niccolo"?</Dialogue>
+  <Dialogue id="introduction5" speaker="Nicco" next_id="introduction6" image_id="portrait2" image_pos="">I usually go by "Nicco" or "Nix", whichever one you'd prefer.</Dialogue>
+  <Dialogue id="introduction6" speaker="You" next_id="introduction7" image_id="" image_pos="">Sounds good, that works for me.</Dialogue>
   <Dialogue id="introduction7" speaker="You" next_id="[TUTORIAL]" image_id="" image_pos="">So Nicco, let's talk about your resume...</Dialogue>
-  <Dialogue id="tutorial1" speaker="Tutorial" next_id="" image_id="" image_pos="">Mouse over the resume to highlight points of interest to you.</Dialogue>
+  <Dialogue id="tutorial1" speaker="Tutorial" next_id="" image_id="pxArt-qm" image_pos="">&lt;color=yellow&gt;Ask about items on the resume by clicking on it.&lt;/color&gt;</Dialogue>
+  <Dialogue id="R-ClickMe" speaker="Tutorial" next_id="tutorial2" image_id="pxArt-qm" image_pos="">&lt;color=yellow&gt;You will get a short description about your selection here.&lt;/color&gt;</Dialogue>
+  <Dialogue id="tutorial2" speaker="Tutorial" next_id="tutorial3" image_id="pxArt-qm" image_pos="">&lt;color=yellow&gt;Sometimes you can get possible responses...&lt;/color&gt;<Response next_id="tutorial3" text="&quot;Why does this resume even need a tutorial...&quot;"></Response></Dialogue>
+  <Dialogue id="tutorial3" speaker="Tutorial" next_id="[TUTORIALEND]" image_id="pxArt-qm" image_pos="">&lt;color=yellow&gt;Or &lt;color=#00ffffff&gt;&lt;u&gt;&lt;link=https://www.linkedin.com/in/niccojacinto&gt;[ LINKS ]&lt;/link&gt;&lt;/u&gt;&lt;/color&gt; you can click, so don't click on a link if you don't want to open anything.&lt;/color&gt;<Response next_id="[TUTORIALEND]" text="[ End Tutorial ]"></Response></Dialogue>
   <Dialogue id="R-nicco" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Yep, that's me. I go by either Nicco or Nix, whichever you prefer.</Dialogue>
   <Dialogue id="R-phone" speaker="Nicco" next_id="" image_id="pxArt-mobileicon" image_pos="">That's my mobile phone number. I'd very much prefer to be emailed though!<Response next_id="R-phone2" text="Can I leave you text messages then?"></Response><Response next_id="R-phone3" text="How about other forms of contact?"></Response></Dialogue>
-  <Dialogue id="R-phone2" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Absolutely! Leaving a voicemail is also good if you're unable to reach me!</Dialogue>
-  <Dialogue id="R-phone3" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Certainly, we can talk about other forms of communication in private.</Dialogue>
+  <Dialogue id="R-phone2" speaker="Nicco" next_id="R-phone" image_id="portrait2" image_pos="">Absolutely! Leaving a voicemail is also good if you're unable to reach me!</Dialogue>
+  <Dialogue id="R-phone3" speaker="Nicco" next_id="R-phone" image_id="portrait2" image_pos="">Certainly, we can talk about other forms of communication in private.</Dialogue>
   <Dialogue id="R-linkedin" speaker="Nicco" next_id="" image_id="pxArt-LinkedIn" image_pos="">You can view my LinkedIn profile &lt;color=#00ffffff&gt;&lt;u&gt;&lt;link=https://www.linkedin.com/in/niccojacinto&gt;[ here ]&lt;/link&gt;&lt;/u&gt;&lt;/color&gt;.</Dialogue>
   <Dialogue id="R-email" speaker="Nicco" next_id="" image_id="" image_pos="">If you have setup your emailing preferences, you can send me a message by clicking &lt;color=#00ffffff&gt;&lt;link=mailto:niccolo.jacinto@gmail.com?subject=Hi%20There!&amp;body=Nice%20resume!&gt;[here]&lt;/link&gt;&lt;/color&gt;.</Dialogue>
   <Dialogue id="R-github" speaker="Nicco" next_id="" image_id="pxArt-Github" image_pos="">If you haven't yet, you can view my github profile&lt;color=#00ffffff&gt;&lt;link=https://github.com/niccojacinto&gt; [ here ]&lt;/link&gt;&lt;/color&gt;</Dialogue>

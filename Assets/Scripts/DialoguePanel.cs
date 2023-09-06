@@ -28,6 +28,7 @@ public class DialoguePanel : MonoBehaviour
     {
         coroutineIsRunning = true;
         DialogueManager.Instance.ShowNextButton(false);
+        DialogueManager.Instance.ShowResponses(false);
         finishDialogue = false;
         WaitForSeconds delay = new WaitForSeconds(DialogueManager.Instance.textSpeed);
         speakerName.text = d.speaker;
@@ -80,7 +81,7 @@ public class DialoguePanel : MonoBehaviour
 
         if (d.responses.Count > 0)
         {
-            DialogueManager.Instance.ShowResponses();
+            DialogueManager.Instance.ShowResponses(true);
         }
         coroutineIsRunning = false;
     }
