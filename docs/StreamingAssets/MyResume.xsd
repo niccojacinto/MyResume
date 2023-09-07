@@ -1,27 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="Dialogues">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name="Dialogue" maxOccurs="unbounded" minOccurs="0">
+        <xs:element maxOccurs="unbounded" name="Dialogue">
           <xs:complexType mixed="true">
-            <xs:sequence>
-              <xs:element name="Response" minOccurs="0">
+            <xs:sequence minOccurs="0">
+              <xs:element maxOccurs="unbounded" name="Response">
                 <xs:complexType>
-                  <xs:simpleContent>
-                    <xs:extension base="xs:string">
-                      <xs:attribute type="xs:string" name="next_id" />
-                      <xs:attribute type="xs:string" name="text" />
-                    </xs:extension>
-                  </xs:simpleContent>
+                  <xs:attribute name="next_id" type="xs:string" use="required" />
+                  <xs:attribute name="text" type="xs:string" use="required" />
                 </xs:complexType>
               </xs:element>
             </xs:sequence>
-            <xs:attribute type="xs:string" name="id" use="optional" />
-            <xs:attribute type="xs:string" name="speaker" use="optional" />
-            <xs:attribute type="xs:string" name="next_id" use="optional" />
-            <xs:attribute type="xs:string" name="image_id" use="optional" />
-            <xs:attribute type="xs:string" name="image_pos" use="optional" />
+            <xs:attribute name="id" type="xs:string" use="required" />
+            <xs:attribute name="speaker" type="xs:string" use="required" />
+            <xs:attribute name="next_id" type="xs:string" use="required" />
+            <xs:attribute name="image_id" type="xs:string" use="required" />
+            <xs:attribute name="image_pos" type="xs:string" use="required" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>

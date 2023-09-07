@@ -10,14 +10,21 @@
   <Dialogue id="introduction7" speaker="You" next_id="[TUTORIAL]" image_id="" image_pos="">So Nicco, let's talk about your resume...</Dialogue>
   <Dialogue id="tutorial1" speaker="Tutorial" next_id="" image_id="pxArt-qm" image_pos="">&lt;color=yellow&gt;Ask about items on the resume by clicking on it.&lt;/color&gt;</Dialogue>
   <Dialogue id="R-ClickMe" speaker="Tutorial" next_id="tutorial2" image_id="pxArt-qm" image_pos="">&lt;color=yellow&gt;You will get a short description about your selection here.&lt;/color&gt;</Dialogue>
-  <Dialogue id="tutorial2" speaker="Tutorial" next_id="tutorial3" image_id="pxArt-qm" image_pos="">&lt;color=yellow&gt;Sometimes you can get possible responses...&lt;/color&gt;<Response next_id="tutorial3" text="&quot;Why does this resume even need a tutorial...&quot;"></Response></Dialogue>
-  <Dialogue id="tutorial3" speaker="Tutorial" next_id="[TUTORIALEND]" image_id="pxArt-qm" image_pos="">&lt;color=yellow&gt;Or &lt;color=#00ffffff&gt;&lt;u&gt;&lt;link=https://www.linkedin.com/in/niccojacinto&gt;[ LINKS ]&lt;/link&gt;&lt;/u&gt;&lt;/color&gt; you can click, so don't click on a link if you don't want to open anything.&lt;/color&gt;<Response next_id="[TUTORIALEND]" text="[ End Tutorial ]"></Response></Dialogue>
+  <Dialogue id="tutorial2" speaker="Tutorial" next_id="tutorial3" image_id="pxArt-qm" image_pos=""> &lt;color=yellow&gt;Sometimes you can get possible responses...&lt;/color&gt;
+    <Response next_id="tutorial3" text="&quot;Why does this resume even need a tutorial...&quot;"></Response>
+  </Dialogue>
+  <Dialogue id="tutorial3" speaker="Tutorial" next_id="[TUTORIALEND]" image_id="pxArt-qm" image_pos=""> &lt;color=yellow&gt;Or &lt;color=#00ffffff&gt;&lt;link=https://www.linkedin.com/in/niccojacinto&gt;[ LINKS ]&lt;/link&gt;&lt;/color&gt; you can click, so don't click on a link if you don't want to open anything.&lt;/color&gt;
+    <Response next_id="[TUTORIALEND]" text="[ End Tutorial ]"></Response>
+  </Dialogue>
   <Dialogue id="R-nicco" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Yep, that's me. I go by either Nicco or Nix, whichever you prefer.</Dialogue>
-  <Dialogue id="R-phone" speaker="Nicco" next_id="" image_id="pxArt-mobileicon" image_pos="">That's my mobile phone number. I'd very much prefer to be emailed though!<Response next_id="R-phone2" text="Can I leave you text messages then?"></Response><Response next_id="R-phone3" text="How about other forms of contact?"></Response></Dialogue>
+  <Dialogue id="R-phone" speaker="Nicco" next_id="" image_id="pxArt-mobileicon" image_pos="">That's my mobile phone number. I'd very much prefer to be emailed though!
+    <Response next_id="R-phone2" text="Can I leave you text messages?"></Response>
+    <Response next_id="R-phone3" text="How about other forms of contact?"></Response>
+  </Dialogue>
   <Dialogue id="R-phone2" speaker="Nicco" next_id="R-phone" image_id="portrait2" image_pos="">Absolutely! Leaving a voicemail is also good if you're unable to reach me!</Dialogue>
   <Dialogue id="R-phone3" speaker="Nicco" next_id="R-phone" image_id="portrait2" image_pos="">Certainly, we can talk about other forms of communication in private.</Dialogue>
   <Dialogue id="R-linkedin" speaker="Nicco" next_id="" image_id="pxArt-LinkedIn" image_pos="">You can view my LinkedIn profile &lt;color=#00ffffff&gt;&lt;u&gt;&lt;link=https://www.linkedin.com/in/niccojacinto&gt;[ here ]&lt;/link&gt;&lt;/u&gt;&lt;/color&gt;.</Dialogue>
-  <Dialogue id="R-email" speaker="Nicco" next_id="" image_id="" image_pos="">If you have setup your emailing preferences, you can send me a message by clicking &lt;color=#00ffffff&gt;&lt;link=mailto:niccolo.jacinto@gmail.com?subject=Hi%20There!&amp;body=Nice%20resume!&gt;[here]&lt;/link&gt;&lt;/color&gt;.</Dialogue>
+  <Dialogue id="R-email" speaker="Nicco" next_id="" image_id="" image_pos="">If you have setup your emailing preferences, you can send me a message by clicking &lt;color=#00ffffff&gt;&lt;link=mailto:niccolo.jacinto@gmail.com?subject=Hi%20There!&amp;body=Nice%20resume!&gt;[ here ]&lt;/link&gt;&lt;/color&gt;.</Dialogue>
   <Dialogue id="R-github" speaker="Nicco" next_id="" image_id="pxArt-Github" image_pos="">If you haven't yet, you can view my github profile&lt;color=#00ffffff&gt;&lt;link=https://github.com/niccojacinto&gt; [ here ]&lt;/link&gt;&lt;/color&gt;</Dialogue>
   <Dialogue id="R-loc" speaker="Nicco" next_id="R-loc2" image_id="portrait2" image_pos="">Visit me &lt;color=#00ffffff&gt;&lt;link=https://goo.gl/maps/NV693kDWnFPob98X7&gt;[ here ]&lt;/link&gt;&lt;/color&gt;</Dialogue>
   <Dialogue id="R-loc2" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Okay, that's not really where I live. It's classified.</Dialogue>
@@ -25,7 +32,9 @@
   <Dialogue id="R-soq_mechanics" speaker="Nicco" next_id="R-soq_mechanics2" image_id="portrait2" image_pos="">I've protoyped a lot of mechanics I wanted to just 'try' out.</Dialogue>
   <Dialogue id="R-soq_mechanics2" speaker="Nicco" next_id="R-soq_mechanics3" image_id="portrait2" image_pos="">Sometimes they're part of a project, but most of the time they're not so I don't really save them.</Dialogue>
   <Dialogue id="R-soq_mechanics3" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Like.. there's this rubixcube-like meets tetris inventory style system I was playing around with for VR. It was quite fun to make. :D</Dialogue>
-  <Dialogue id="R-soq_entrylvl" speaker="Nicco" next_id="R-soq_entrylvl2" image_id="portrait2" image_pos="">I think I've reached the point where I want to work on projects on a slightly bigger scale. I believe I can start working on a project and learn from it since I am a blank slate and still have much to learn.<Response next_id="R-soq_entrylvl3" text="Are you open to other roles besides programming?"></Response></Dialogue>
+  <Dialogue id="R-soq_entrylvl" speaker="Nicco" next_id="R-soq_entrylvl2" image_id="portrait2" image_pos="">I think I've reached the point where I want to work on projects on a slightly bigger scale. I believe I can start working on a project and learn from it since I am a blank slate and still have much to learn.
+    <Response next_id="R-soq_entrylvl3" text="Are you open to other roles besides programming?"></Response>
+  </Dialogue>
   <Dialogue id="R-soq_entrylvl3" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Yep. Like I said, I have much to learn from across different fields so I'm open to other roles as well.</Dialogue>
   <Dialogue id="R-soq_languages" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">C# is my preferred language, but I've also dabbled around other languages depending on the situation. It may take me a while to review and re-learn the language in question though.</Dialogue>
   <Dialogue id="R-soq_problemsolving" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Solving issues just comes with the job. Off by one errors, Heisenbugs (LOL), order of execution errors, design flaws.</Dialogue>
@@ -35,5 +44,45 @@
   <Dialogue id="R-educ_npower" speaker="Nicco" next_id="" image_id="pxArt-npower" image_pos="">Might seem weird having this, but I did take a slight interest in data. Also from what I've learned, there can be game applications from it, and it does involve some degree of programming using Python for example.</Dialogue>
   <Dialogue id="R-educ_googleit" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">This is my I.T. bit. It's very fundamental, but it did give me a small glimpse of the IT world. I was also reading Michel Meyer's CompTIA on the side (although never actually took the certification) and there was a LOT of information there I wouldn't have normally come across.</Dialogue>
   <Dialogue id="R-educ_humber" speaker="Nicco" next_id="" image_id="pxArt-humber" image_pos="">I took game programming courses in Humber. I was quite stressful but also fun! Shoutout to Kris Alexander! (definitely a passionate guy when it comes to games)</Dialogue>
-  <Dialogue id="R-exp_acid" speaker="Nicco" next_id="" image_id="pxArt-acid" image_pos="">::Under Construction::</Dialogue>
+  <Dialogue id="R-exp_acid" speaker="Nicco" next_id="" image_id="pxArt-acid" image_pos="">I worked on several acid projects...
+    <Response next_id="R-acidgp" text="Tell me about GoPhysio..."></Response>
+    <Response next_id="R-acidcvrep" text="Tell me about Coachella Valley Repertory..."></Response>
+    <Response next_id="R-acidpenn" text="Tell me about Penn Highlands..."></Response>
+    <Response next_id="R-acidother" text="Anything else?"></Response>
+  </Dialogue>
+  <Dialogue id="R-acidgp" speaker="Nicco" next_id="R-acidgp2" image_id="portrait2" image_pos="">GoPhysio was basically software installed on a 3D camera that general practitioners would use to monitor a patient's exercise routine...</Dialogue>
+  <Dialogue id="R-acidgp2" speaker="Nicco" next_id="R-exp_acid" image_id="portrait2" image_pos="">I worked on product execution flow, importing assets, maintenance, device API, and UI.</Dialogue>
+  <Dialogue id="R-acidcvrep" speaker="Nicco" next_id="R-acidcvrep2" image_id="portrait2" image_pos="">CVRep was a remote controlled donor wall project.</Dialogue>
+  <Dialogue id="R-acidcvrep2" speaker="Nicco" next_id="R-exp_acid" image_id="portrait2" image_pos="">I worked on the entire screen display and remote software along with the mobile API to front-end.</Dialogue>
+  <Dialogue id="R-acidpenn" speaker="Nicco" next_id="R-acidpenn2" image_id="portrait2" image_pos="">Penn was a donor wall project that went on Penn Highlands Healthcare.</Dialogue>
+  <Dialogue id="R-acidpenn2" speaker="Nicco" next_id="R-exp_acid" image_id="portrait2" image_pos="">I mostly worked on UI on a seriously short timeframe.</Dialogue>
+  <Dialogue id="R-acidother" speaker="Nicco" next_id="R-exp_acid" image_id="portrait2" image_pos="">I did do other small interactive game projects that were there, but never really the focus of the company.</Dialogue>
+  <Dialogue id="R-viral" speaker="Nicco" next_id="R-viral2" image_id="portrait2" image_pos="">My main responsibilities in ViRal were machine maintenance and customer onboarding and assistance...</Dialogue>
+  <Dialogue id="R-viral2" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">I was also either manning the front desk or creating software to be used with the VR machines during downtime.</Dialogue>
+  <Dialogue id="R-portfolio" speaker="Nicco" next_id="portfolio2" image_id="portrait2" image_pos="">You can view my portfolio &lt;color=#00ffffff&gt;&lt;link=https://niccojacinto.wixsite.com/divinyx&gt;[ here ]&lt;/link&gt;&lt;/color&gt;
+    <Response next_id="R-portfoliomadload" text="Your projects page isn't loading, maybe you should fix that.."></Response>
+  </Dialogue>
+  <Dialogue id="R-portfoliomadload" speaker="Nicco" next_id="R-portfoliomadload2" image_id="portrait2" image_pos="">I'm terribly sorry... I can guarantee that the page is fine as I've asked multiple people to try it out, it just does take a WHILE..</Dialogue>
+  <Dialogue id="R-portfoliomadload2" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">I'm still debating whether to optimize each individual media I've used in the site or whether to just make a simpler portolio site altogether.</Dialogue>
+  <Dialogue id="R-projects" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">If you haven't yet... please visit my portfolio &lt;color=#00ffffff&gt;&lt;link=https://niccojacinto.wixsite.com/divinyx&gt;[ here ]&lt;/link&gt;&lt;/color&gt;
+    <Response next_id="R-portfoliomadload" text="Your projects page isn't loading, maybe you should fix that.."></Response>
+  </Dialogue>
+  <Dialogue id="R-volunteer" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">I was into film and photography during the early days of Youtube so I volunteered for this company. I mostly did technical maintenance, handling equipment, and managing camera and sound.</Dialogue>
+  <Dialogue id="R-Qwhyanswer" speaker="Nicco" next_id="R-Qwhyanswer2" image_id="portrait2" image_pos="">The intent on certain responses were not to be detail heavy, but more or less conversational...</Dialogue>
+  <Dialogue id="R-Qwhyanswer2" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">so in that sense, it's not actually meant to be a substitute for an actual interview nor an actual interactive resume made in javascript.</Dialogue>
+  <Dialogue id="R-Qpurpose" speaker="Nicco" next_id="R-Qpurpose2" image_id="portrait2" image_pos="">I was in the middle of doing another iteration on my Resume when I came across an interactive javascript resume online..</Dialogue>
+  <Dialogue id="R-Qpurpose2" speaker="Nicco" next_id="R-Qpurpose3" image_id="portrait2" image_pos="">It was interesting, but me having the attention span of a goldfish (no offense to all the goldfish out there) sometimes can't get through blocks of added text on top of the actual resume.</Dialogue>
+  <Dialogue id="R-Qpurpose3" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">So my main motivation was just to do my own take on it, while giving the reader a bit more incentive to keep reading.</Dialogue>
+  <Dialogue id="R-Qfav" speaker="Nicco" next_id="R-Qfav2" image_id="portrait2" image_pos="">It's really difficult to pick 'The One Game To Rule Them All', but since I get casually asked this question quite a bit so I always defaulted to.. </Dialogue>
+  <Dialogue id="R-Qfav2" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">"Suikoden II", which was the FFVII of my childhood</Dialogue>
+  <Dialogue id="R-Qgametype" speaker="Nicco" next_id="R-Qgametype2" image_id="portrait2" image_pos="">I play a variety of games, so it might be better to say what I tend to avoid or outright don't enjoy.. </Dialogue>
+  <Dialogue id="R-Qgametype2" speaker="Nicco" next_id="R-Qgametype3" image_id="portrait2" image_pos="">.. which would probably be Horror Games, Party Games, and/or Extremely Skill Dependent Games. </Dialogue>
+  <Dialogue id="R-Qgametype3" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">That being said, I still appreciate the ingenuity in their programming and design, and I would watch people play them from time to time instead.</Dialogue>
+  <Dialogue id="R-Qsched" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">In theory, I am quite flexible in my schedules, but like all things, it will depend on the circumstances and restrictions.</Dialogue>
+  <Dialogue id="R-Qtimemachine" speaker="Nicco" next_id="R-Qtimemachine2" image_id="portrait2" image_pos="">The Past. Is it because I dwell on my mistakes? It's part of it.. yes, but going into the future doesn't really bring anything to the table.</Dialogue>
+  <Dialogue id="R-Qtimemachine2" speaker="Nicco" next_id="R-Qtimemachine3" image_id="portrait2" image_pos="">if you just want a glimpse, sure, but travel? If you think about it, we are currently living in the future of people from the past,</Dialogue>
+  <Dialogue id="R-Qtimemachine3" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">and living now doesn't seem any different from traveling to the future. Whereas traveling to the past opens up countless possibilities.</Dialogue>
+  <Dialogue id="R-Qworkmoney" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">Isn't that the dream? Just pick a career that aligns with your hobbies, or manage people instead, or teach, or pick up something that let's you build and create.</Dialogue>
+  <Dialogue id="R-Qcomms" speaker="Nicco" next_id="R-Qcomms2" image_id="portrait2" image_pos="">In a perfect world people wouldn't need to communicate at all...</Dialogue>
+  <Dialogue id="R-Qcomms2" speaker="Nicco" next_id="" image_id="portrait2" image_pos="">I'd describe it more like Mental Omnipotence as opposed to SSS Tier Mind Reading.</Dialogue>
 </Dialogues>

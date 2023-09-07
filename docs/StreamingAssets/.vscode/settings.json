@@ -1,0 +1,9 @@
+{
+    "xml.format.legacy": true,
+    "xml.format.splitAttributes": false,
+    "xml.format.enforceQuoteStyle": "preferred",
+    "xml.format.grammarAwareFormatting": true,
+    "xml.format.preservedNewlines": 0,
+    "xml.format.joinCommentLines": true,
+    "xml.format.splitAttributesIndentSize": 4,
+}
