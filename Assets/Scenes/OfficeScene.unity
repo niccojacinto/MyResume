@@ -5601,7 +5601,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1251177255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6708,7 +6708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Build Date: 9/8/2023 4:55:25 AM'
+  m_text: 'Build Date: 9/9/999 9:99:99 AM'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 175edb0878bcc514b85b2bc10b1e26d2, type: 2}
   m_sharedMaterial: {fileID: 4085406197751326068, guid: 175edb0878bcc514b85b2bc10b1e26d2, type: 2}
@@ -8387,7 +8387,7 @@ PrefabInstance:
       objectReference: {fileID: 1972289766}
     - target: {fileID: 681602280673658058, guid: 6245b8f915a7fa4498b34e723b7fa8ea, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: R-soq_mechanics
+      value: R-soq_entrylvl
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6245b8f915a7fa4498b34e723b7fa8ea, type: 3}
